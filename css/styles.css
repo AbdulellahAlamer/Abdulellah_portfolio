@@ -399,7 +399,7 @@ main section {
     display: inline-flex;
   }
 }
-
+/* for screeen with max width 600px. EX: for phones */
 @media (max-width: 600px) {
   .hero__cta {
     flex-direction: column;

@@ -1,4 +1,5 @@
 (function () {
+  // define some variabels
   const body = document.body;
   const themeToggle = document.querySelector(".theme-toggle");
   const themeIcon = themeToggle
@@ -18,7 +19,7 @@
     }
     localStorage.setItem("preferred-theme", theme);
   };
-
+  // for light and dark mode
   const getPreferredTheme = () => {
     const stored = localStorage.getItem("preferred-theme");
     if (stored) {
@@ -64,7 +65,7 @@
       }
     });
   });
-
+  //  when thre is a backend we can linking it here
   if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
       event.preventDefault();
